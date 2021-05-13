@@ -1,81 +1,13 @@
 @import "./normalize.scss";
-@import "./../../assets/scss/fonts.scss";
-$bg-block: #f6f7ff;
-$text-color: #1f1e25;
-$text-color-light: $bg-block;
-$main-color: #2c36f2;
-$halfhidden: #707c87;
-$color-line: #c1c2ca;
-:export {
-  bg-color: $bg-block;
-  halfhidden: $halfhidden;
-  main-color: $main-color;
-  text-color: $text-color;
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./global.scss";
+
+.header {
+  min-height: 91px;
+
+  background-color: $bg-block;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-
-  text-decoration: none;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-
-  clip: rect(0 0 0 0);
-}
-
-.container {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.link {
-  color: $text-color;
-}
-
-.link:hover,
-.link:focus {
-  color: $halfhidden;
-}
-
-.link:active {
-  color: $main-color;
-}
-
-.button {
-  color: $bg-block;
-
-  background-color: $main-color;
-}
-
-.button:hover,
-.button:focus {
-  opacity: 0.9;
-}
-
-.button:active {
-  color: darken($color: $bg-block, $amount: 10%);
-
-  background-color: darken($color: $main-color, $amount: 10%);
-}
-
 
 .header__container {
   display: flex;
@@ -113,7 +45,7 @@ html {
 .header-nav-list__link {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   text-decoration: none;
 
 @extend .link;
@@ -128,7 +60,7 @@ html {
 
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   text-decoration: none;
 
 @extend .link;
@@ -160,7 +92,7 @@ html {
 .promo__container {
   position: relative;
 
-  padding: 101px 440px 114px 170px;
+  padding: 101px 560px 114px 170px;
 }
 
 .promo__title {
@@ -170,7 +102,7 @@ html {
   font-weight: 700;
   font-size: 54px;
   line-height: 1.2;
-  font-family: "Roboto Bold","Arial", sans-serif;
+  font-family: "Roboto-Bold","Arial", sans-serif;
   color: $text-color-light;
 }
 
@@ -181,7 +113,7 @@ html {
   font-weight: normal;
   font-size: 22px;
   line-height: 1.2;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   color: $text-color-light;
 }
 
@@ -192,7 +124,7 @@ html {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   color: $text-color;
   text-decoration: none;
 
@@ -235,7 +167,7 @@ html {
   font-weight: bold;
   font-size: 41px;
   line-height: 1.2;
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-family: "Roboto-Bold", "Arial", sans-serif;
   color: $text-color;
 }
 
@@ -272,7 +204,7 @@ html {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   color: $text-color;
 
   border: none;
@@ -293,6 +225,10 @@ html {
 
   font-size: 24px;
   text-align: center;
+}
+
+.converter-form__input--invalid {
+  outline: 2px solid $color-invalid;
 }
 
 .converter-form__select {
@@ -328,7 +264,7 @@ html {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 
   border: none;
   border-radius: 4px;
@@ -355,7 +291,7 @@ html {
   font-weight: 500;
   font-size: 28px;
   line-height: 2.1;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 }
 
 .converter-history__table {
@@ -369,7 +305,7 @@ html {
 
   font-size: 18px;
   line-height: 1.2;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
 }
 
 .converter-history__table::before {
@@ -433,7 +369,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
 
   border: none;
   border-radius: 4px;
@@ -478,7 +414,7 @@ html {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.5;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
   color: $halfhidden;
 }
 
@@ -501,7 +437,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto-Medium", "Arial", sans-serif;
   text-decoration: none;
 
 @extend .link;
@@ -601,4 +537,14 @@ html {
 
 .footer-socials__icon:active {
   fill: $main-color;
+}
+
+.not-found {
+  flex-grow: 1;
+
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1.2;
+  font-family: "Roboto-Regular", "Arial", sans-serif;
+  color: $text-color;
 }
