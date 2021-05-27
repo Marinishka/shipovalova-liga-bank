@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shipovalova-liga-bank/static/css/main.11d3bb34.chunk.css",
+    "main.js": "/shipovalova-liga-bank/static/js/main.05cc6201.chunk.js",
+    "main.js.map": "/shipovalova-liga-bank/static/js/main.05cc6201.chunk.js.map",
+    "runtime-main.js": "/shipovalova-liga-bank/static/js/runtime-main.2d5a78a3.js",
+    "runtime-main.js.map": "/shipovalova-liga-bank/static/js/runtime-main.2d5a78a3.js.map",
+    "static/js/2.88dc96af.chunk.js": "/shipovalova-liga-bank/static/js/2.88dc96af.chunk.js",
+    "static/js/2.88dc96af.chunk.js.map": "/shipovalova-liga-bank/static/js/2.88dc96af.chunk.js.map",
+    "index.html": "/shipovalova-liga-bank/index.html",
+    "static/css/main.11d3bb34.chunk.css.map": "/shipovalova-liga-bank/static/css/main.11d3bb34.chunk.css.map",
+    "static/js/2.88dc96af.chunk.js.LICENSE.txt": "/shipovalova-liga-bank/static/js/2.88dc96af.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/shipovalova-liga-bank/static/media/icon-mobile.4d4c8c64.svg",
+    "static/media/icon-login.877a13e5.svg": "/shipovalova-liga-bank/static/media/icon-login.877a13e5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d5a78a3.js",
+    "static/js/2.88dc96af.chunk.js",
+    "static/css/main.11d3bb34.chunk.css",
+    "static/js/main.05cc6201.chunk.js"
+  ]
+}
