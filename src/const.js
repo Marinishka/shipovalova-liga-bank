@@ -19,7 +19,7 @@ export const StatusCodes = {
 };
 
 export const Routes = {
-  MAIN: `/`,
+  MAIN: `/shipovalova-liga-bank`,
   NOT_FOUND: `/not_found`
 };
 
